@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,600&family=Sansita+Swashed:wght@450&display=swap");
+
+body {
+  height: 100vh;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+.BackgroundImageApp {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./pictures/terriana150300085.jpg);
+  background-repeat: repeat;
+  opacity: 0.08;
+}
+
+.bigTitle {
+  font-family: "Sansita Swashed", cursive;
+}
+
+.pageText {
+  font-family: "Piazzolla", serif;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.1rem;
+}

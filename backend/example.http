@@ -1,0 +1,67 @@
+POST http://localhost:4500/api/auth
+Content-Type: application/json
+
+{
+    "email":"john@gmail.com",
+    "password":"123456"
+}
+
+###
+GET http://localhost:4500/api/recipes/
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjZiNjUwMjM1N2U0ZDI0OTQxMTY4ZjgiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMTA2MzQxM30.7L5QGnyUHB5P8npmxzPQPmM7rODtnEoh2Tl1qr5LFM0
+
+
+###
+DELETE  http://localhost:4500/api/recipes/5f6f713a5de1124a203e70ea
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjZmNzEyNzVkZTExMjRhMjAzZTcwZTQiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMTE0MDE2N30.3AxA_qs8VR_YNNE0dRU3JOQTeneRgeP4WaaMoJOONWU
+
+
+
+###
+POST http://localhost:4500/api/users
+Content-Type: application/json
+
+{
+    "email":"john7@gmail.com",
+    "password":"john@gmail.com",
+    "name":"john",
+    "admin":false
+}
+
+###
+POST http://localhost:4500/api/recipes/
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjZmNzEyNzVkZTExMjRhMjAzZTcwZTQiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMTEzODk5MX0.6m9dUdGGNyIphN53nHUmvr8rPrFh2UzeO5qW5zaO6b4
+
+{
+    "title":"recipasdfasdfasdf2",
+    "description":"reasdasdsdaffasd",
+    "ingredients":"reci213pe",
+    "directions":"recipsadfsde"
+}
+
+###
+GET  http://localhost:4500/api/users/recipes/?numbers=153227,790216
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjZiNjUwMjM1N2U0ZDI0OTQxMTY4ZjgiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMDg5NjA3NX0.CVoVhApk9UBXrgOUpcWF5ezFF2w0isfT49itufN_i8g
+
+###
+GET  http://localhost:4500/api/users/all
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjZiNjUwMjM1N2U0ZDI0OTQxMTY4ZjgiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMDg5NjA3NX0.CVoVhApk9UBXrgOUpcWF5ezFF2w0isfT49itufN_i8g
+###
+DELETE  http://localhost:4500/api/users/favorites/5f7883e0845d3d07ec98454f
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjcwYmQxNDZlZGVkNTUyM2NhZmJjZDMiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMTczMzYxMn0.2PmN3iF4XrlngojRhJAJFga_LfoGhxqNi7bwAH82vb4
+
+
+
+
+###
+GET  http://localhost:4500/api/users/favorites/john
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjcwYmQxNDZlZGVkNTUyM2NhZmJjZDMiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMTY2OTY1OX0.jVlgWVn6kzVd04BSMsnkFpCvt3RrIweB4OUBBkfWIeU
+
+
